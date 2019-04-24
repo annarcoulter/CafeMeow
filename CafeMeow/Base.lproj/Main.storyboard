@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,43 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9SP-Zc-tvr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="407"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="9SP-Zc-tvr">
+                                <rect key="frame" x="52" y="92" width="270" height="483"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Café Meow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeT-e4-XOa">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="FQt-8o-L4d"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                        <color key="textColor" red="0.92156862750000001" green="0.50196078430000002" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="0.29770440924657532" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="2" height="3"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8z-hk-HNz">
-                                        <rect key="frame" x="0.0" y="83" width="375" height="75"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Café Meow is a celebrated cat café based in St. Louis, Missouri. We serve coffee, drinks, and a wide variety of bakery items. Don't forget to pick up some treats at the counter for our furry friends!
-</string>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Café Meow is a celebrated cat café based in St. Louis, Missouri. We serve coffee, drinks, and a wide variety of bakery items. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8z-hk-HNz">
+                                        <rect key="frame" x="0.0" y="102" width="270" height="75"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="All of our cats are available for adoption. Come down and meet your future feline!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkc-9F-flE">
-                                        <rect key="frame" x="0.0" y="166" width="375" height="75"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="204" width="270" height="75"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQV-3B-3Jc">
-                                        <rect key="frame" x="0.0" y="249" width="375" height="75"/>
+                                        <rect key="frame" x="0.0" y="306" width="270" height="75"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.50196078431372548" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Menu"/>
                                         <connections>
                                             <segue destination="0qk-Ri-9XR" kind="showDetail" identifier="" id="geM-rg-ire"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlW-Yl-T3C">
-                                        <rect key="frame" x="0.0" y="332" width="375" height="75"/>
+                                        <rect key="frame" x="0.0" y="408" width="270" height="75"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.50196078431372548" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Adopt"/>
                                         <connections>
                                             <segue destination="ZW4-YQ-Sgg" kind="showDetail" identifier="" id="Uki-6A-hsU"/>
@@ -63,21 +65,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrG-Fk-iw4">
-                                <rect key="frame" x="164" y="353" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="didPressShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="daC-lc-vjY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9SP-Zc-tvr" secondAttribute="trailing" id="Y0W-Ml-kRB"/>
-                            <constraint firstItem="9SP-Zc-tvr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p1X-hf-6Aq"/>
-                            <constraint firstItem="9SP-Zc-tvr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zdW-Ay-Vkl"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -93,11 +82,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DdI-67-SZj">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DdI-67-SZj">
+                                <rect key="frame" x="0.0" y="20" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVc-oR-pVY">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
                                         <state key="normal" title="&lt; Café Meow"/>
                                         <connections>
                                             <action selector="didGoBack:" destination="0qk-Ri-9XR" eventType="touchUpInside" id="mRX-qz-D1Y"/>
@@ -107,12 +97,6 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="EYa-D8-sus" firstAttribute="bottom" secondItem="DdI-67-SZj" secondAttribute="bottom" id="T6w-0V-Hzb"/>
-                            <constraint firstItem="DdI-67-SZj" firstAttribute="leading" secondItem="EYa-D8-sus" secondAttribute="leading" id="Zyi-qz-SJz"/>
-                            <constraint firstItem="DdI-67-SZj" firstAttribute="top" secondItem="EYa-D8-sus" secondAttribute="top" id="axJ-uk-MkG"/>
-                            <constraint firstItem="EYa-D8-sus" firstAttribute="trailing" secondItem="DdI-67-SZj" secondAttribute="trailing" id="hLu-Aq-Clc"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EYa-D8-sus"/>
                     </view>
                 </viewController>
@@ -131,11 +115,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gyI-l4-Y3Q">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzB-21-P2c">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzB-21-P2c">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                         <state key="normal" title="&lt; Cafe Meow"/>
                                         <connections>
                                             <action selector="didPressGoBack:" destination="ZW4-YQ-Sgg" eventType="touchUpInside" id="xGA-aW-NfK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrG-Fk-iw4">
+                                        <rect key="frame" x="0.0" y="617" width="375" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didPressShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="daC-lc-vjY"/>
                                         </connections>
                                     </button>
                                 </subviews>
