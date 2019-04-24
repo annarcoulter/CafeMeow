@@ -29,6 +29,13 @@ class CafeMeowUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.buttons["Menu"].tap()
+        app.buttons["< Café Meow"].tap()
+        app.buttons["Adopt"].tap()
+        app.buttons["< Cafe Meow"].tap()
+                
     }
 
 }

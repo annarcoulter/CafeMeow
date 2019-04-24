@@ -8,6 +8,27 @@
 
 import UIKit
 
+
+
+
+
+// CLASS APRIL 24 - table view
+
+
+struct Cat {
+    let name: String
+    let breed: String
+    let age: Int
+}
+
+
+
+
+
+
+
+
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var button:UIButton!

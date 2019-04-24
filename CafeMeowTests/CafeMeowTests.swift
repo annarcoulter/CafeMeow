@@ -22,6 +22,8 @@ class CafeMeowTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let mac = Cat (name: "Mac", breed: "Bald", age: 3)
+        XCTAssertEqual ("Mac", mac.name)
     }
 
     func testPerformanceExample() {
